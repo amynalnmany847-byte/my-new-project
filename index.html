@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مستشار تقني شامل - مشروعك الذكي</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- خط عربي أنيق -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>💡 المستشار التقني الشامل</h1>
+            <p>إدارة المشاريع، تقدير نطاق العمل، وتتبع المهام بكفاءة</p>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <!-- القسم الأول: مولد الأفكار -->
+        <section class="card">
+            <h2>🎯 مولد نطاق المشاريع والأنظمة</h2>
+            <p>اختر مجال المشروع لتوليد الوصف والنطاق الأكاديمي فوراً:</p>
+            
+            <div class="form-group">
+                <select id="projectType">
+                    <option value="bus">نظام تتبع الحصص والحافلات الذكي</option>
+                    <option value="tourism">نظام إدارة السياحة والفرق السياحية</option>
+                    <option value="school">نظام الإدارة المدرسية الذكي</option>
+                </select>
+                <button id="generateBtn" class="btn-primary">توليد النطاق التقني</button>
+            </div>
+
+            <div id="projectOutput" class="output-box hidden">
+                <h3>📌 تفاصيل نطاق المشروع:</h3>
+                <p id="outputDescription"></p>
+            </div>
+        </section>
+
+        <!-- القسم الثاني: تتبع المهام الذكي -->
+        <section class="card">
+            <h2>📋 إدارة المهام اليومية</h2>
+            <div class="task-form">
+                <input type="text" id="taskInput" placeholder="أدخل مهمة جديدة (مثلاً: تصميم الواجهات)...">
+                <button id="addTaskBtn" class="btn-secondary">إضافة مهمة</button>
+            </div>
+            <ul id="taskList" class="task-list"></ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>جميع الحقوق محفوظة © 2026 | أنشئ بواسطة المستشار التقني</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
